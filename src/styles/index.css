@@ -1,0 +1,155 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* *
+  * 
+  * THEME -- PRODUCT PREVIEW CARD
+  * 
+  */
+  .theme-product-preview {
+    --color-primary: hsl(158, 36%, 37%);
+    --color-primary-dark: hsl(158, 36%, 20%);
+
+    --color-background: hsl(30, 38%, 92%);
+    --color-background-dark: hsl(212, 21%, 14%);
+
+    --color-card: hsl(0, 0%, 100%);
+    --color-text-base: hsl(212, 21%, 14%);
+    --color-text-muted: hsl(228, 12%, 48%);
+    --color-text-inverted: hsl(0, 0%, 100%);
+
+    --font-family-base: "Montserrat";
+    --font-family-accent: "Fraunces";
+
+    --font-weight-regular: 500;
+    --font-weight-bold: 700;
+
+    --font-size-body: 14px;
+  }
+
+  /* *
+  * 
+  * THEME -- INTERACTIVE RATING
+  * 
+  */
+  .theme-interactive-rating {
+    --color-primary: hsl(25, 97%, 53%);
+    --color-neutral: hsl(216, 12%, 54%);
+
+    --color-background: hsl(216, 12%, 8%);
+    --color-card: hsl(213, 19%, 18%);
+
+    --color-text-base: hsl(0, 0%, 100%);
+    --color-text-muted: hsl(217, 12%, 63%);
+
+    --font-family-base: "Overpass";
+  }
+
+  .bg-card-gradient {
+    background-image: radial-gradient(
+      circle at top center,
+      #222a38,
+      #1a212e 40%
+    );
+  }
+
+  /* *
+  * 
+  * THEME -- NEWS HOME PAGE
+  * 
+  */
+  .theme-news-page {
+    --color-primary: hsl(5, 85%, 63%);
+    --color-secondary: hsl(35, 77%, 62%);
+    --color-neutral: hsl(233, 8%, 79%);
+
+    --color-background: hsl(36, 100%, 99%);
+    --color-card: hsl(240, 100%, 5%);
+
+    --color-text-base: hsl(240, 100%, 5%);
+    --color-text-muted: hsl(236, 13%, 42%);
+
+    --font-family-base: "Inter";
+  }
+
+  /* *
+  * 
+  * THEME -- ORDER SUMMARY
+  * 
+  */
+  .theme-order-summary {
+    --color-primary: hsl(245, 75%, 52%);
+    --color-neutral: hsl(225, 100%, 98%);
+
+    --color-background: hsl(225, 100%, 94%);
+
+    --color-text-base: hsl(223, 47%, 23%);
+    --color-text-muted: hsl(224, 23%, 55%);
+
+    --font-family-base: "Red Hat Display";
+    /* 
+  
+  - Desaturated blue: hsl(224, 23%, 55%)
+  - Dark blue: hsl(223, 47%, 23%)
+  */
+  }
+
+  /* *
+  * 
+  * THEME -- BASE APPAREL
+  * 
+  */
+  .theme-base-apparel {
+    --color-primary: hsl(0, 36%, 70%);
+    --color-secondary: hsl(0, 93%, 68%);
+
+    --color-background: hsl(225, 100%, 100%);
+
+    --color-text-base: hsl(0, 0%, 0%);
+    --color-text-muted: hsl(0, 6%, 24%);
+
+    --font-family-base: "Josefin Sans";
+  }
+
+  /* *
+  * 
+  * THEME -- SUNNYSIDE AGENCY
+  * 
+  */
+  .theme-sunnyside-agency {
+    --color-primary: hsl(7, 99%, 70%);
+    --color-secondary: hsl(51, 100%, 49%);
+    --color-neutral: hsl(210, 4%, 67%);
+
+    --color-background: hsl(0, 0%, 100%);
+
+    --color-text-base: hsl(212, 27%, 19%);
+    --color-text-muted: hsl(232, 10%, 55%);
+
+    --font-family-base: "Barlow";
+    --font-family-accent: "Fraunces";
+  }
+
+  /* *
+  *
+  * GENERAL STYLES
+  *
+  */
+  ::-webkit-scrollbar {
+    display: none;
+  }
+
+  html,
+  body {
+    height: 100%;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  #root {
+    height: 100%;
+    overflow-y: scroll;
+  }
+}
